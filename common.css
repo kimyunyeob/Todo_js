@@ -1,0 +1,106 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  font-size: 12px;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+#body {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  cursor: pointer;
+}
+.js-clock h1 {
+  position: absolute;
+  bottom: 4%;
+  right: 2%;
+  font-size: 4em;
+}
+.hello_form h2 {
+  font-size: 5em;
+}
+.hello_form .js-form input {
+  width: 500px;
+  height: 50px;
+  background: none;
+  font-size: 4em;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+.hello_form .js-form input::placeholder {
+  color: #fff;
+}
+.todo_from .js-TodoForm input {
+  margin-top: 10%;
+  width: 500px;
+  height: 50px;
+  background: none;
+  font-size: 4em;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+.todo_from .js-TodoForm input::placeholder {
+  color: #fff;
+}
+.todo_from ul {
+  list-style: none;
+}
+.todo_from ul li {
+  margin-top: 5%;
+}
+.todo_from ul li span {
+  font-size: 2em;
+  padding-left: 10px;
+}
+.todo_from ul li button {
+  font-size: 2em;
+  color: red;
+  background: none;
+  cursor: pointer;
+}
+.js-weather {
+  position: absolute;
+  bottom: 2%;
+  right: 0%;
+  font-size: 2em;
+}
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+.bgImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.7;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 1s linear;
+}
